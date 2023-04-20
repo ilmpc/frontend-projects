@@ -7,16 +7,54 @@
   </head>
   <body>
     <header class="bg-emerald-400 py-5 px-7">
-      <div class="flex justify-between max-w-3xl m-auto">
-        <img src="/logo.png" alt="Logo" />
+      <div
+        class="flex flex-col items-center max-w-3xl m-auto gap-4 sm:flex-row sm:justify-between"
+      >
+        <img class="h-full w-20" src="/logo.png" alt="Logo" />
         <nav class="flex justify-between gap-4 text-slate-800">
           <a class="hover:underline" href="#">About</a>
           <a class="hover:underline" href="#">Projects</a>
           <a class="hover:underline" href="#">Contacts</a>
         </nav>
-        <div>data2</div>
+        <div class="flex gap-4">
+          <a
+            href="http://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="h-full w-6 bg-white rounded-lg"
+              src="/instagram.png"
+              alt=""
+          /></a>
+          <a
+            href="http://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="h-full w-6 bg-white rounded-md"
+              src="/facebook.png"
+              alt=""
+          /></a>
+        </div>
       </div>
     </header>
+    <section class="grid grid-cols-1 md:grid-cols-2">
+      <img
+        class="filter blur-sm w-full h-auto col-start-1 row-start-1 md:blur-0"
+        src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1169&q=80"
+        alt=""
+      />
+      <div
+        class="text-slate-700 h-full grid place-content-center p-5 col-start-1 row-start-1 relative md:col-start-2"
+      >
+        <h3 class="text-center font-bold text-xl mb-4">About us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+          ipsa et cum eligendi, tempore nobis accusamus itaque dolorum molestiae
+          dicta, eum pariatur qui aliquid nostrum at culpa omnis, a architecto!
+        </p>
+      </div>
+    </section>
 
     <div class="hidden" id="app"></div>
     <script type="module" src="/src/main.js"></script>
