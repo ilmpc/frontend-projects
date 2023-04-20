@@ -10,13 +10,8 @@ getUserWithPosts(5).then((data) => {
 });
 
 function userPageComponent({ user, posts }) {
-  // div - page
-  // user information - name, email
-  // div > posts map postComponent join
-  // posts.map(postComponent)
-  // `${['qwe', 'asv'].join('')}`
   return `
-    <div>
+    <div class="bg-green-500">
       <div>
         <h2>${user.name}</h2>
         <h4>${user.email}</h4>
@@ -31,7 +26,7 @@ function userPageComponent({ user, posts }) {
 
 function postComponent(post) {
   return `
-    <div class="post">
+    <div class="">
       <h3>${post.title}</h3>
       <p>${post.body}</p>
     </div>
