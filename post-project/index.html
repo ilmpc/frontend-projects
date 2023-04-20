@@ -6,7 +6,19 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header class="bg-emerald-400 py-5 px-7">
+      <div class="flex justify-between max-w-3xl m-auto">
+        <img src="/logo.png" alt="Logo" />
+        <nav class="flex justify-between gap-4 text-slate-800">
+          <a class="hover:underline" href="#">About</a>
+          <a class="hover:underline" href="#">Projects</a>
+          <a class="hover:underline" href="#">Contacts</a>
+        </nav>
+        <div>data2</div>
+      </div>
+    </header>
+
+    <div class="hidden" id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
