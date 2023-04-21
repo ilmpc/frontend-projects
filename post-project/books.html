@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order books online</title>
+    <style>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
+  </head>
+  <body>
+    <header
+      class="bg-sky-800 py-6 px-10 flex gap-12 items-center justify-between"
+    >
+      <div class="flex gap-6 items-center">
+        <img src="/logo.svg" alt="Logo" />
+        <div class="flex gap-2 items-center">
+          <a href="#" class="w-10 h-10 bg-white grid place-items-center">x</a>
+          <a href="#" class="w-10 h-10 bg-white grid place-items-center">x</a>
+          <a href="#" class="w-10 h-10 bg-white grid place-items-center">x</a>
+        </div>
+      </div>
+      <nav class="flex gap-4">
+        <a href="#" class="text-white hover:text-yellow-300">Home</a>
+        <a href="#" class="text-white hover:text-yellow-300">About</a>
+        <a href="#" class="text-white hover:text-yellow-300">Pages</a>
+        <a href="#" class="text-white hover:text-yellow-300">Contact Us</a>
+      </nav>
+      <a
+        href="#"
+        class="font-serif bg-yellow-400 px-8 py-3 hover:scale-110 transition"
+        >Order Today</a
+      >
+    </header>
+    <section class="bg-sky-800 py-24 px-8">
+      <div class="container mx-auto grid grid-cols-2 items-center">
+        <div>
+          <div class="font-serif text-white text-3xl mb-4">
+            <svg
+              width="35"
+              height="2"
+              viewBox="0 0 35 2"
+              class="inline mr-4"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0H35V2H0V0Z" fill="#FFCA42" />
+            </svg>
+            Welcome to Pages!
+          </div>
+          <h2 class="font-serif text-white text-7xl tracking-wide mb-8">
+            Your Books From <br />
+            The Best Writer.
+          </h2>
+          <p class="text-lg text-slate-300 mb-8">
+            We believe that reading books are essential to a healthy culture.
+            <br />
+            They’re where authors can connect with readers.
+          </p>
+
+          <div class="flex gap-8 items-center mb-8">
+            <a
+              href="#"
+              class="font-serif text-lg bg-yellow-400 px-8 py-3 hover:scale-110 transition"
+              >Order book</a
+            >
+            <a
+              href="#"
+              class="font-serif text-lg text-slate-100 underline underline-offset-4"
+              >Read free demo</a
+            >
+          </div>
+          <div class="flex gap-20">
+            <div class="flex gap-2 items-start">
+              <img class="p-2" src="/circle.svg" alt="" />
+              <div>
+                <p class="text-white text-2xl font-serif mb-1">Pages:</p>
+                <p class="text-lg text-slate-300">250 pages</p>
+              </div>
+            </div>
+
+            <div class="flex gap-2 items-start">
+              <img class="p-2" src="/circle.svg" alt="" />
+              <div>
+                <p class="text-white text-2xl font-serif mb-1">Length:</p>
+                <p class="text-lg text-slate-300">12 Hours</p>
+              </div>
+            </div>
+
+            <div class="flex gap-2 items-start">
+              <img class="p-2" src="/circle.svg" alt="" />
+              <div>
+                <p class="text-white text-2xl font-serif mb-1">Rating:</p>
+                <p class="text-lg text-slate-300">4.5/5 (305 ratings)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="/book_cover.png" alt="book cover" />
+      </div>
+    </section>
+  </body>
+</html>
