@@ -11,7 +11,7 @@ getUserWithPosts(5).then((data) => {
 
 function userPageComponent({ user, posts }) {
   return `
-    <div class="bg-green-500">
+    <div class="">
       <div>
         <h2>${user.name}</h2>
         <h4>${user.email}</h4>
@@ -26,9 +26,9 @@ function userPageComponent({ user, posts }) {
 
 function postComponent(post) {
   return `
-    <div class="">
-      <h3>${post.title}</h3>
-      <p>${post.body}</p>
+    <div class="m-2 p-5 rounded-md shadow-lg max-w-sm">
+      <h3 class="text-lg font-bold mb-3">${post.title}</h3>
+      <p class="text-left">${post.body}</p>
     </div>
   `;
 }
