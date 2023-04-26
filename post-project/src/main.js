@@ -1,13 +1,20 @@
 import "./style.css";
 import { getUserWithPosts } from "./api.js";
 import { userPageComponent, loadingComponent } from "./components.js";
+import { State } from "./state.js";
 
-const root = document.querySelector("#app");
+const appState = new State({ userId: 10 });
+appState.setChangeListener(render);
 
-async function render() {
+async function render(appState) {
+  const root = document.getElementById("app");
   root.innerHTML = loadingComponent();
-  const data = await getUserWithPosts(5);
+  const data = await getUserWithPosts(appState.userId);
   root.innerHTML = userPageComponent(data);
-}
 
-render();
+  const leftButton = document.getElementById("leftButton");
+  const rightButton = document.getElementById("rightButton");
+
+  leftButton.addEventListener("click", () => appState.prevUser());
+  rightButton.addEventListener("click", () => appState.nextUser());
+}
