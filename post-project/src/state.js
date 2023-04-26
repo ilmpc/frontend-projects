@@ -1,5 +1,6 @@
 export class State {
   constructor(initialState = {}) {
+    this.page = initialState.page ?? "usersList";
     this.userId = initialState.userId ?? 1;
     this.changeListener = null;
   }
@@ -12,6 +13,19 @@ export class State {
 
   setChangeListener(callback) {
     this.changeListener = callback;
+    this.emitChange();
+  }
+
+  openUser(id) {
+    if (1 <= id && id <= 10) {
+      this.userId = id;
+      this.page = "user";
+      this.emitChange();
+    }
+  }
+
+  backToUsersList() {
+    this.page = "usersList";
     this.emitChange();
   }
 

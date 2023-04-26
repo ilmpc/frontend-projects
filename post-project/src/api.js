@@ -8,6 +8,10 @@ export async function api(url, options) {
   throw new Error("Logical error");
 }
 
+export async function getUsers() {
+  return api("/users");
+}
+
 export async function getUser(userId) {
   const user = await api(`/users/${userId}`);
   return user;
