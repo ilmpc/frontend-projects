@@ -12,7 +12,7 @@ const root = document.getElementById("app");
 const startBtn = document.getElementById("start-timer");
 startBtn.addEventListener("click", startTimer);
 function startTimer() {
-  let counter = 5;
+  let counter = 15;
   root.innerText = formatTime(counter);
   startBtn.disabled = true;
   const timer = setInterval(() => {
